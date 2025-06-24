@@ -1,0 +1,22 @@
+db.ecommercs.insertMany([
+  { feedback_id: 1, order_id: 101, customer_id: 1, rating: 5, comment: "Fast and smooth delivery!", submitted_at: ISODate("2024-06-06T10:00:00Z") },
+  { feedback_id: 2, order_id: 102, customer_id: 2, rating: 4, comment: "Delivered on time.", submitted_at: ISODate("2024-06-07T12:15:00Z") },
+  { feedback_id: 3, order_id: 103, customer_id: 3, rating: 3, comment: "Delivery not updated yet.", submitted_at: ISODate("2024-06-08T14:30:00Z") },
+  { feedback_id: 4, order_id: 104, customer_id: 4, rating: 4, comment: "Well-packed items.", submitted_at: ISODate("2024-06-09T11:00:00Z") },
+  { feedback_id: 5, order_id: 105, customer_id: 5, rating: 2, comment: "Still waiting for delivery.", submitted_at: ISODate("2024-06-10T08:45:00Z") },
+  { feedback_id: 6, order_id: 106, customer_id: 6, rating: 5, comment: "Delivered with care!", submitted_at: ISODate("2024-06-11T16:20:00Z") },
+  { feedback_id: 7, order_id: 107, customer_id: 7, rating: 4, comment: "On-time and neat delivery.", submitted_at: ISODate("2024-06-12T13:50:00Z") },
+  { feedback_id: 8, order_id: 108, customer_id: 8, rating: 3, comment: "Item not received yet.", submitted_at: ISODate("2024-06-13T17:10:00Z") },
+  { feedback_id: 9, order_id: 109, customer_id: 9, rating: 5, comment: "Excellent!", submitted_at: ISODate("2024-06-14T09:30:00Z") },
+  { feedback_id: 10, order_id: 110, customer_id: 10, rating: 2, comment: "No tracking info provided.", submitted_at: ISODate("2024-06-15T15:45:00Z") },
+  { feedback_id: 11, order_id: 111, customer_id: 11, rating: 4, comment: "Very professional delivery staff.", submitted_at: ISODate("2024-06-16T10:20:00Z") },
+  { feedback_id: 12, order_id: 112, customer_id: 12, rating: 5, comment: "Great experience!", submitted_at: ISODate("2024-06-17T11:35:00Z") },
+  { feedback_id: 13, order_id: 113, customer_id: 13, rating: 3, comment: "Still in transit.", submitted_at: ISODate("2024-06-18T12:50:00Z") },
+  { feedback_id: 14, order_id: 114, customer_id: 14, rating: 5, comment: "Super fast shipping!", submitted_at: ISODate("2024-06-19T09:10:00Z") },
+  { feedback_id: 15, order_id: 115, customer_id: 15, rating: 5, comment: "Perfect delivery.", submitted_at: ISODate("2024-06-20T14:25:00Z") },
+  { feedback_id: 16, order_id: 116, customer_id: 16, rating: 2, comment: "Not delivered yet.", submitted_at: ISODate("2024-06-21T13:30:00Z") },
+  { feedback_id: 17, order_id: 117, customer_id: 17, rating: 4, comment: "Tracking was helpful.", submitted_at: ISODate("2024-06-22T11:15:00Z") },
+  { feedback_id: 18, order_id: 118, customer_id: 18, rating: 3, comment: "Still pending delivery.", submitted_at: ISODate("2024-06-23T12:00:00Z") },
+  { feedback_id: 19, order_id: 119, customer_id: 19, rating: 5, comment: "Quick and clean.", submitted_at: ISODate("2024-06-24T10:10:00Z") },
+  { feedback_id: 20, order_id: 120, customer_id: 20, rating: 4, comment: "Everything was good.", submitted_at: ISODate("2024-06-25T09:05:00Z") }
+]);
