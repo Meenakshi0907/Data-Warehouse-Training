@@ -1,0 +1,29 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.10'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install pandas numpy
+  displayName: '📦 Install Python packages'
+
+- script: |
+    python analysis/week2_processing_script.py
+  displayName: '🚀 Run delay summary analysis'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'logs/delay_summary.log'
+    ArtifactName: 'DelayLog'
+    publishLocation: 'Container'
+
+- script: |
+    echo Python analysis pipeline completed successfully.
+  displayName: 'Success message'
