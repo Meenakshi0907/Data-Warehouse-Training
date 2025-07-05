@@ -1,0 +1,26 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.10'
+    displayName: 'Set up Python 3.10'
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+    displayName: 'Install Dependencies'
+
+  - script: |
+      python run_pipeline.py
+    displayName: 'Run Supply Chain Script'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: 'output'
+      artifactName: 'SupplyChainOutput'
+    displayName: 'Publish Output Files'
